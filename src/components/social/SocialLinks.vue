@@ -13,7 +13,7 @@ import { Component, Vue, Prop, Mixins } from "vue-property-decorator";
 
 @Component
 export default class SocialLinks extends Vue {
-
+  @Prop({type: Object}) links!: {}
 }
 </script>
 
