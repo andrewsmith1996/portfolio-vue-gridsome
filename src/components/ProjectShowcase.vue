@@ -13,17 +13,11 @@
         
         <div class="row">
             <div class="col-sm-6 col-sm-offset-0 col-xs-10 col-xs-offset-1">
-                <a href="https://www.inconnectcables.co.uk" target="_blank">
-                    <g-image src="~/assets/images/websites/inconnect-cables.png" class="img-responsive" alt="Inconnect Cables website - Built at Cursor" />
-                </a>
-                <p class="project-caption"><span>Inconnect Cables</span><br>HTML, CSS, JavaScript, CraftCMS based on provided designs<br>Built on placement at <a href="https://cursor.co.uk" target="_blank">Cursor</a></p>
+                <InconnectCables />
             </div>
 
             <div class="col-sm-6 col-sm-offset-0 col-xs-10 col-xs-offset-1">
-                <a href="https://www.espressodesign.co.uk/offers" target="_blank">
-                    <g-image src="~/assets/images/websites/espresso-design.png" class="img-responsive" alt="Espresso Design Offers Page - Built at Cursor" />
-                </a>
-                <p class="project-caption text-center"><span>Espresso Design offers page</span><br>HTML, CSS, JavaScript based on provided designs<br>Built on placement at <a href="https://cursor.co.uk" target="_blank">Cursor</a></p>
+                <EspressoDesign />
             </div>
         </div>
     </div>
@@ -41,6 +35,9 @@ import BloodSugarAppMagik from "~/components/project-showcase/projects/BloodSuga
 import DataDashboard from "~/components/project-showcase/projects/DataDashboard.vue";
 import GeolocationWeatherApp from "~/components/project-showcase/projects/GeolocationWeatherApp.vue";
 import HackbustersGame from "~/components/project-showcase/projects/HackbustersGame.vue";
+import InconnectCables from "~/components/project-showcase/websites/InconnectCables.vue";
+import EspressoDesign from "~/components/project-showcase/websites/EspressoDesign.vue";
+
 
 @Component({
   components: {
@@ -52,7 +49,9 @@ import HackbustersGame from "~/components/project-showcase/projects/HackbustersG
     BloodSugarAppMagik,
     DataDashboard,
     GeolocationWeatherApp,
-    HackbustersGame
+    HackbustersGame,
+    InconnectCables,
+    EspressoDesign
   }
 })
 export default class ProjectShowcase extends Vue {

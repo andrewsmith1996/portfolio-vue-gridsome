@@ -22,23 +22,16 @@
             </div>
 
             <div class="col-md-8 col-sm-6 col-sm-offset-0 col-xs-10 col-xs-offset-1">
-                <g-image src="~/assets/images/websites/steve-nash-fashion.png" class="img-responsive" alt="Steve Nash fashion designer website" />
-                <p class="project-caption text-center"><span>Steve Nash Fashion Designer Portfolio Website</span></p>
+                <SteveNashFashion />
             </div>
         </div>
 
         <div class="row">
             <div class="col-md-6 col-sm-6 col-sm-offset-0 col-xs-10 col-xs-offset-1">
-                <a href="https://www.simonsgroup.com" target="_blank">
-                    <g-image src="~/assets/images/websites/simons-group-main.png" class="img-responsive" alt="www.simonsgroup.com" />
-                </a>
-                <p class="project-caption text-center"><span>Simons Group</span><br>HTML, CSS, JavaScript, CraftCMS based on provided designs<br>Built on placement at <a href="https://cursor.co.uk" target="_blank">Cursor</a></p>
+                <SimonsGroup />
             </div>
             <div class="col-md-6 col-sm-6 col-sm-offset-0 col-xs-10 col-xs-offset-1">
-                <a href="https://www.fosterac.co.uk/" target="_blank">
-                    <g-image src="~/assets/images/websites/fosterac.png" class="img-responsive" alt="Foster Environmental - Built at Cursor" />
-                </a>
-                <p class="project-caption text-center"><span>Foster Environmental</span><br>HTML, CSS, JavaScript, CraftCMS based on provided designs<br>Built on placement at <a href="https://cursor.co.uk" target="_blank">Cursor</a></p>
+                <FosterAC />
             </div>
         </div>
     </div>
@@ -47,8 +40,18 @@
 
 <script lang="ts">
 import { Component, Vue, Prop, Mixins } from "vue-property-decorator";
+import SteveNashFashion from "~/components/project-showcase/websites/SteveNashFashion.vue";
+import SimonsGroup from "~/components/project-showcase/websites/SimonsGroup.vue";
+import FosterAC from "~/components/project-showcase/websites/FosterAC.vue";
 
-@Component
+
+@Component({
+  components: {
+    SteveNashFashion,
+    SimonsGroup,
+    FosterAC
+  }
+})
 export default class Header extends Vue {
 
 }

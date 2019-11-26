@@ -15,24 +15,15 @@
                 </ul>
             </div>
             <div class="col-md-8 col-sm-6 col-sm-offset-0 col-xs-10 col-xs-offset-1">
-                <a href="https://2018.lincolnhack.org/" target="_blank">
-                    <g-image src="~/assets/images/websites/lincoln-hack.png" class="img-responsive" alt="Lincoln Hack 2018 website - Built at Cursor" />
-                </a>
-                <p class="project-caption text-center"><span>Lincoln Hack 2018</span><br>HTML, CSS, JavaScript, CSS animations based on provided designs<br>Built on placement at <a href="https://cursor.co.uk" target="_blank">Cursor</a></p>
+                <LincolnHack />
             </div>
         </div>
         <div class="row">
             <div class="col-md-6 col-sm-6 col-sm-offset-0 col-xs-10 col-xs-offset-1">
-                <a href="https://www.greenstocklighting..co.uk/" target="_blank">
-                    <g-image src="~/assets/images/websites/greenstock-lighting.png" class="img-responsive" alt="Greenstock Lighting - Built at Cursor" />
-                </a>
-                <p class="project-caption text-center"><span>Greenstock Lighting</span><br>HTML, CSS, JavaScript, CraftCMS based on provided designs<br>Built on placement at <a href="https://cursor.co.uk" target="_blank">Cursor</a></p>
+              <GreenstockLighting />
             </div>
             <div class="col-md-6 col-sm-6 col-sm-offset-0 col-xs-10 col-xs-offset-1">
-                <a href="https://www.nicholsonmcbride.com/digital-transformation" target="_blank">
-                    <g-image src="~/assets/images/websites/digital-transformation.png" class="img-responsive" alt="Nicholson McBride Digital Transformation - Built at Cursor" />
-                </a>
-                <p class="project-caption text-center"><span>Digital Transformation</span><br>HTML, CSS, JavaScript based on provided designs<br>Built on placement at <a href="https://cursor.co.uk" target="_blank">Cursor</a></p>
+               <NicholsonMcBride />
             </div>
         </div>
     </div>
@@ -44,11 +35,17 @@ import { Component, Vue, Prop, Mixins } from "vue-property-decorator";
 import SkillsHeader from "~/components/skills/SkillsHeader.vue";
 import SkillsList from "~/components/skills/SkillsList.vue";
 import { mapGetters } from "vuex";
+import LincolnHack from "~/components/project-showcase/websites/LincolnHack.vue";
+import GreenstockLighting from "~/components/project-showcase/websites/GreenstockLighting.vue";
+import NicholsonMcBride from "~/components/project-showcase/websites/NicholsonMcBride.vue";
 
 @Component({
   components: {
     SkillsHeader,
-    SkillsList
+    SkillsList,
+    LincolnHack,
+    GreenstockLighting,
+    NicholsonMcBride
   },
   computed: {
     ...mapGetters({
