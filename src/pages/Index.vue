@@ -2,40 +2,6 @@
  <!DOCTYPE HTML>
 
 <html lang="en">
-
-<head>
-
-    <title>Portfolio | Andrew Smith - Web Developer</title>
-
-    <!-- Meta Data -->
-    <meta name="keywords" content="Andrew Smith,Andrew Smith Developer,Web Developer,Web Developer Nottingham,Web Developer,Cross Platform Developer,Mobile App Developer,award winning">
-    <meta name="description" content="Andrew Smith is a web developer, mobile application developer and double award winning BSc (Hons) Computer Science graduate based in Nottingham">
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="canonical" href="https://andrewsmithdeveloper.com/"/>
-    <link rel="author" href="https://www.linkedin.com/in/andrewsmithdeveloper/"/>
-
-    <link rel="apple-touch-icon" sizes="180x180" href="~/assets/images/favicons/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="~/assets/images/favicons/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="~/assets/images/favicons/favicon-16x16.png">
-    <link rel="manifest" href="/site.webmanifest">
-    <meta name="msapplication-TileColor" content="#da532c">
-    <meta name="theme-color" content="#ffffff">
-
-    <!-- Bootstrap CDNs and JQuery CDNs -->
-    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
-    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
-
-    
-
-    <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,500|Open+Sans:600" rel="stylesheet">
-
-    <!-- External CSS file -->
-    <link href="css/styles.css" rel="stylesheet" type="text/css">
-
-
-</head>
-
 <body>
     <header>
 
@@ -49,6 +15,7 @@
                 </div>
                 <div class="col-md-4 col-sm-4 col-sm-offset-0 col-xs-10 col-xs-offset-1">
                     <!-- React Component -->
+                    phone here
                     <div id="phone-wrapper"></div>
                 </div>
             </div>
@@ -608,7 +575,8 @@
                         <div class="blog-content">
                             <h2>Latest from my blog</h2>
                             <a href="https://thisdeveloperslife.wordpress.com/" target="_blank" class="blog-link">thisdeveloperslife.wordpress.com</a>
-                            <article id="blog-wrapper">>
+                            BLOG HERE
+                            <article id="blog-wrapper">
     
                             </article>
                         </div>
