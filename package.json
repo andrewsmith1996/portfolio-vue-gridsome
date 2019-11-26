@@ -7,9 +7,12 @@
     "explore": "gridsome explore"
   },
   "dependencies": {
+    "@gridsome/source-filesystem": "^0.6.2",
     "fibers": "^4.0.2",
     "gridsome": "^0.7.0",
-    "sass": "^1.23.7"
+    "sass": "^1.23.7",
+    "vuex": "^3.1.2",
+    "vuex-module-decorators": "^0.11.0"
   },
   "devDependencies": {
     "gridsome-plugin-typescript": "^0.4.0",

@@ -29,7 +29,9 @@ import BlogPreview from "~/components/social/BlogPreview.vue";
   }
 })
 export default class Contact extends Vue {
-
+  // get globalContent() {
+  //   return content;
+  // }
 }
 </script>
 

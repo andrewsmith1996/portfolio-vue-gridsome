@@ -1,9 +1,8 @@
 <template>
   <div>
-    <h1>Andrew Smith</h1>
-    <h2>Developer</h2>
-    <p>A double award winning First Class BSc (Hons) Computer Science graduate and agency experienced developer specialising in web development and mobile app development.</p>
-    <p>Currently working with Vue.js, MEAN stack technologies, native mobile application development and cross-platform application development.</p>
+    <h1>{{ title }}</h1>
+    <h2>{{ jobRole }}</h2>
+    <p v-html="intro"></p>
   </div>
 </template>
 
@@ -12,7 +11,9 @@ import { Component, Vue, Prop, Mixins } from "vue-property-decorator";
 
 @Component
 export default class HeaderContent extends Vue {
-
+  @Prop({type: String, default: "Andrew Smith"}) title!: string;
+  @Prop({type: String, default: "Developer"}) jobRole!: string;
+  @Prop({type: String}) intro!: string;
 }
 </script>
 
