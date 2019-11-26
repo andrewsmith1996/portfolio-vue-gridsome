@@ -46,11 +46,6 @@ export default function (Vue, { router, head, isClient, appOptions } ) {
   })
 
   head.link.push({
-    rel: 'stylesheet',
-    href: 'https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css'
-  })
-
-  head.link.push({
     rel: 'canonical',
     href: 'https://andrewsmithdeveloper.com/'
   })

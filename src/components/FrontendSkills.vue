@@ -4,9 +4,13 @@
        <SkillsHeader />
         <div class="row">
             <div class="col-md-4 col-sm-6">
-                <h3>{{ content.frontend_title }}</h3>
-                <SkillsList :skills="frontEndSkills" />
-                <h3>{{ content.frontend_title_non_agency }}</h3>
+                <h3>Front-end development</h3>
+                <ul class="list-unstyled sub-experience">
+                    <li><span></span>HTML, CSS, LESS, Bootstrap</li>
+                    <li><span></span>JavaScript, JQuery, AJAX</li>
+                    <li><span></span>UX & UI design, Accessibility, SEO</li>
+                </ul>
+                <h3>Non-agency experience</h3>
                 <ul class="list-unstyled sub-experience">
                     <li><span></span>ReactJS, Vue.js, TypeScript</li>
                     <li><span></span>Android Development (Java)</li>

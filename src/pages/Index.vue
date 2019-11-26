@@ -48,5 +48,5 @@ export default class Index extends Vue {
 </script>
 
 <style lang="scss">
-
+@import '../assets/bootstrap/bootstrap.min.css';
 </style>

@@ -10,9 +10,9 @@
           <div class="row">
               <div class="col-md-6 col-sm-12">
                   <div class="card">
-                      <h3>Junior Developer placement year</h3>
-                      <p>Year in industry creating websites and online software at <a href="https://cursor.co.uk" target="_blank">Cursor</a> for customers and clients across a broad range of industries. Helpdesk technical support, designing front-end wireframes and visuals and general software development processes. Involved in client meetings, working closely with professional clients and participating in R&D projects.</p>
-                      <span>2017 - 2018</span>
+                    <h3>Junior Developer placement year</h3>
+                    <p>Year in industry creating websites and online software at <a href="https://cursor.co.uk" target="_blank">Cursor</a> for customers and clients across a broad range of industries. Helpdesk technical support, designing front-end wireframes and visuals and general software development processes. Involved in client meetings, working closely with professional clients and participating in R&D projects.</p>
+                    <span>2017 - 2018</span>
                   </div>
               </div>
               <div class="col-md-6 col-sm-12">
