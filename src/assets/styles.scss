@@ -793,6 +793,59 @@ header {
 	}
 }
 
+@mixin on-circle($item-count, $circle-size, $item-size) {
+  position: relative;
+  width:  $circle-size;
+  height: $circle-size;
+  padding: 0;
+  border-radius: 50%; 
+  list-style: none;       
+  
+  > * {
+    display: block;
+    position: absolute;
+    top:  50%; 
+    left: 50%;
+    width:  $item-size;
+    height: $item-size;
+    margin: -($item-size / 2);
+  
+    $angle: (360 / $item-count);
+    $rot: 0;
+
+    @for $i from 1 through $item-count {
+      &:nth-of-type(#{$i}) {
+        transform: 
+          rotate($rot * 1deg) 
+          translate($circle-size / 2) 
+          rotate($rot * -1deg);
+      }
+
+      $rot: $rot + $angle;
+    }
+  }
+}
+
+.technologies {
+		@include on-circle($item-count: 6, $circle-size: 20em, $item-size: 6em); 
+		margin: 5em auto 0;
+		
+		img { 
+			display: block; 
+			max-width: 100%; 
+			border-radius: 50%;
+			// transition: .15s;
+			padding:5px;
+			border: solid 5px #fff;
+			box-shadow: 0px 0px 6px 4px  rgba(white, 0.3);
+			transition: box-shadow 0.2s;
+
+			&:active, &:hover {
+				box-shadow: 0px 0px 6px 8px rgba(white, 0.3);
+			}
+		}
+	}
+
 footer{
 	background-color:#26D0CE;
 	padding-top:12px;
