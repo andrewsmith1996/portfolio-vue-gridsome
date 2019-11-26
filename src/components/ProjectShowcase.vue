@@ -1,12 +1,7 @@
 <template>
   <section class="projects-panel">
     <div class="container">
-        <div class="row">
-            <div class="col-md-12">
-                <h2>My work</h2>
-                <p class="subtitle">Take a look at some of my recent projects.</p>
-            </div>
-        </div>
+        <ProjectShowcaseHeader />
 
         <div class="row">
             <div class="col-sm-12 col-md-6 col-sm-offset-0 col-xs-10 col-xs-offset-1">
@@ -218,13 +213,18 @@
             </div>
         </div>
     </div>
-</section>
+  </section>
 </template>
 
 <script lang="ts">
 import { Component, Vue, Prop, Mixins } from "vue-property-decorator";
+import ProjectShowcaseHeader from "~/components/project-showcase/ProjectShowcaseHeader.vue";
 
-@Component
+@Component({
+  components: {
+    ProjectShowcaseHeader
+  }
+})
 export default class ProjectShowcase extends Vue {
 
 }

@@ -1,14 +1,7 @@
 <template>
    <section class="university skills-panel">
       <div class="container">
-          <div class="row">
-              <div class="col-md-12">
-                  <h2 class="text-center">BSc (Hons) Computer Science</h2>
-                  <h4 class="text-center">First Class Honours - 85%. </h4>
-                  <p class="text-center subtitle">2015 - 2019</p>
-                  <p class="text-center">Won both the "Best BSc (Hons) Graduate" and "Best Project BSc (Hons) Computer Science" awards for the highest overall mark in the year group and highest marked dissertation, respectively.</p>
-              </div>
-          </div>
+         <EducationHeader />
           <div class="row">
               <div class="col-md-4 col-sm-6 col-sm-offset-0 col-xs-10 col-xs-offset-1">
                   <h3><strong>Level 1 Modules</strong></h3>
@@ -49,23 +42,22 @@
                   </ul>
               </div>
           </div>
-          <div class="row">
-              <div class="col-md-6 col-md-offset-3">
-                  <div class="placement-text-wrapper">
-                      <h3 class="placement"><strong>Industrial placement year</strong></h3>
-                      <p class="subtitle text-center">July 2017 - July 2018.</p>
-                      <g-image src="~/assets/images/icons/work.png" alt="Working" />
-                  </div>
-              </div>
-          </div>
+          <PlacementYearRow />
       </div>
   </section>
 </template>
 
 <script lang="ts">
 import { Component, Vue, Prop, Mixins } from "vue-property-decorator";
+import EducationHeader from "~/components/education/EducationHeader.vue";
+import PlacementYearRow from "~/components/education/PlacementYearRow.vue";
 
-@Component
+@Component({
+  components: {
+    EducationHeader,
+    PlacementYearRow
+  }
+})
 export default class Education extends Vue {
 
 }
