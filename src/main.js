@@ -14,11 +14,6 @@ export default function (Vue, { router, head, isClient }) {
   })
 
   head.meta.push({
-    name: 'title',
-    content: 'Portfolio | Andrew Smith - Web Developer'
-  })
-
-  head.meta.push({
     name: 'description',
     content: 'Andrew Smith is a web developer, mobile application developer and double award winning BSc (Hons) Computer Science graduate based in Nottingham'
   })
