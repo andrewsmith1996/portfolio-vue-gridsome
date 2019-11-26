@@ -3,8 +3,8 @@
       <div class="container">
           <div class="row">
               <div class="col-md-12">
-                  <h2>Projects</h2>
-                  <p class="subtitle">What have I done?</p>
+                  <h2>{{ projectsContent.title }}</h2>
+                  <p class="subtitle">{{ projectsContent.subtitle }}</p>
               </div>
           </div>
           <div class="row">
@@ -133,8 +133,15 @@
 
 <script lang="ts">
 import { Component, Vue, Prop, Mixins } from "vue-property-decorator";
+import { mapGetters } from "vuex";
 
-@Component
+@Component({
+  computed: {
+    ...mapGetters({
+      projectsContent: "GlobalStore/projects_content"
+    })
+  }
+})
 export default class Projects extends Vue {
 
 }

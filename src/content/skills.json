@@ -1,0 +1,11 @@
+{
+  "frontend_title": "Front-end development",
+  "frontend_title_non_agency": "Non-agency experience",
+  "skills_one": "HTML, CSS, LESS, Bootstrap", 
+  "skills_two": "JavaScript, JQuery, AJAX", 
+  "skills_three": "UX & UI design, Accessibility, SEO", 
+  "skills_four": "ReactJS, Vue.js, TypeScript", 
+  "skills_five": "Android Development (Java)", 
+  "skills_six": "Ionic Framework, React Native", 
+  "skills_seven": "SASS, Flexbox" 
+}

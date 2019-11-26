@@ -1,0 +1,22 @@
+{
+  "panels": [
+    {
+      "title": "Web Development",
+      "description": "Web design &amp; web development skills with a year's experience of working within an agency and a year's freelance experience.",
+      "icon": "~/assets/images/icons/web.png",
+      "alt": "Web Development"
+    },
+    {
+      "title": "Mobile Development",
+      "description": "Skills in native Android development in Java and cross-platform mobile development in Ionic and React Native.",
+      "icon": "~/assets/images/icons/mobile.png",
+      "alt": "Mobile Development Icon"
+    },
+    {
+      "title": "Computer Science",
+      "description": "First Class Honours degree in BSc Computer Science (85%) with a year's placement in industry, winning both the 'Best Graduate' and 'Best Project' awards.",
+      "icon": "/assets/images/icons/comp-sci.png",
+      "alt": "Computer Science"
+    }
+  ]
+}

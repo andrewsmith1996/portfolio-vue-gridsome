@@ -1,21 +1,12 @@
 <template>
   <section class="front-end skills-panel" id="skills-panel">
     <div class="container">
-        <div class="row">
-            <div class="col-md-12">
-                <h2>Skills</h2>
-                <p class="subtitle">What do I know?</p>
-            </div>
-        </div>
+       <SkillsHeader />
         <div class="row">
             <div class="col-md-4 col-sm-6">
-                <h3>Front-end development</h3>
-                <ul class="list-unstyled">
-                    <li><span></span>HTML, CSS, LESS, Bootstrap</li>
-                    <li><span></span>JavaScript, JQuery, AJAX</li>
-                    <li><span></span>UX &amp; UI design, Accessibility, SEO</li>
-                </ul>
-                <h3>Non-agency experience</h3>
+                <h3>{{ content.frontend_title }}</h3>
+                <SkillsList :skills="frontEndSkills" />
+                <h3>{{ content.frontend_title_non_agency }}</h3>
                 <ul class="list-unstyled sub-experience">
                     <li><span></span>ReactJS, Vue.js, TypeScript</li>
                     <li><span></span>Android Development (Java)</li>
@@ -50,10 +41,27 @@
 
 <script lang="ts">
 import { Component, Vue, Prop, Mixins } from "vue-property-decorator";
+import SkillsHeader from "~/components/skills/SkillsHeader.vue";
+import SkillsList from "~/components/skills/SkillsList.vue";
+import { mapGetters } from "vuex";
 
-@Component
+@Component({
+  components: {
+    SkillsHeader,
+    SkillsList
+  },
+  computed: {
+    ...mapGetters({
+      content: "GlobalStore/skills_content"
+    })
+  }
+})
 export default class FrontendSkills extends Vue {
+  content!: {skills_one: any, skills_two: any, skills_three: any, skills_four: any};
 
+  get frontEndSkills() {
+    return `${this.content.skills_one}-${this.content.skills_two}-${this.content.skills_three}-${this.content.skills_four}}`.split("-");
+  }
 }
 </script>
 
