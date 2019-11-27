@@ -15,7 +15,7 @@ h1, h2, p {
 	color: #fff;
 }
 
-p {
+p, li {
 	font-family: 'Open Sans', sans-serif;
 	font-size:14px;
 }
@@ -150,6 +150,51 @@ $grey-light:darken(#fff, 13%);
 	&__block-icon {
 		height: 50px;
 		width: 50px;
+	}
+}
+.education {
+
+	&__header {
+		display:flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+
+	&__placement {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	&__modules {
+
+	}
+
+	&__modules-list {
+		display:flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+
+	&__modules-item {
+		color: white;
+	}
+	
+	&__row {
+		display:flex;
+	}
+
+	&__column {
+		display:flex;
+		flex-grow:1;
+		flex-basis:100%;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
 	}
 }
 
