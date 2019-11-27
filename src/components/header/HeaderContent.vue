@@ -1,8 +1,8 @@
 <template>
   <div>
-    <h1>{{ title }}</h1>
-    <h2>{{ jobRole }}</h2>
-    <p v-html="intro"></p>
+    <h1 class="header__title">{{ title }}</h1>
+    <h2 class="header__subtitle">{{ jobRole }}</h2>
+    <p class="header__intro" v-html="intro"></p>
   </div>
 </template>
 

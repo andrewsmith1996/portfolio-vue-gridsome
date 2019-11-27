@@ -1,18 +1,12 @@
 
 
 <template>
-  <section class="contact skills-panel" id="contact-panel">
-    <div class="container">
-        <div class="row">
-          <div class="col-md-4">
-              <h2>Say hello</h2> 
-              <p class="subtitle">Get in touch</p>
-              <SocialLinks :links="globalContent.socialLinks"/>
-          </div>
-          <div class="col-md-8 col-xs-12">
-              <BlogPreview />
-          </div>
-        </div>
+  <section class="contact">
+    <h2 class="contact__title">Say hello</h2> 
+    <p class="contact__subtitle">Get in touch</p>
+    <div class="contact__container">
+      <SocialLinks class="contact__social" :links="globalContent.socialLinks"/>
+      <BlogPreview class="contact__blog"/>
     </div>
   </section>
 </template>

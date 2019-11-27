@@ -2,17 +2,21 @@
   <!DOCTYPE HTML>
     <html lang="en">
       <body>
-        <Header />
-          <div class="gradient-wrapper">
-            <AboutPanel />
-            <ProjectShowcase />
-            <FrontendSkills />
-            <BackendSkills />
-            <Education />
-            <Projects />
-            <Contact />
-          </div>
-        <Footer />
+        <div class="global__container">
+          <div class="global__container-inner">
+            <Header />
+              <div class="gradient-wrapper">
+                <AboutPanel />
+                <!-- <ProjectShowcase />
+                <FrontendSkills />
+                <BackendSkills />
+                <Education />
+                <Projects />-->
+                <Contact /> 
+              </div>
+            <Footer />
+            </div>
+        </div>
       </body>
     </html>
 </template>
@@ -46,7 +50,3 @@ export default class Index extends Vue {
 
 }
 </script>
-
-<style lang="scss">
-@import '../assets/bootstrap/bootstrap.min.css';
-</style>
