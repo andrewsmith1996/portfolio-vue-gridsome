@@ -1,9 +1,8 @@
 <template>
-  <section class="front-end skills-panel" id="skills-panel">
-    <div class="container">
+  <section class="skills">
        <SkillsHeader />
-        <div class="row">
-            <div class="col-md-4 col-sm-6">
+        <div class="skills__container">
+            <div class="skills__skills-content">
                 <h3>Front-end development</h3>
                 <ul class="list-unstyled sub-experience">
                     <li><span></span>HTML, CSS, LESS, Bootstrap</li>
@@ -18,18 +17,17 @@
                     <li><span></span>SASS, Flexbox</li>
                 </ul>
             </div>
-            <div class="col-md-8 col-sm-6 col-sm-offset-0 col-xs-10 col-xs-offset-1">
+            <div class="skills__skills-example">
                 <LincolnHack />
             </div>
         </div>
-        <div class="row">
-            <div class="col-md-6 col-sm-6 col-sm-offset-0 col-xs-10 col-xs-offset-1">
-              <GreenstockLighting />
-            </div>
-            <div class="col-md-6 col-sm-6 col-sm-offset-0 col-xs-10 col-xs-offset-1">
-               <NicholsonMcBride />
-            </div>
+        <div class="screens">
+          <div class="screens__row">
+            <GreenstockLighting />
+            <NicholsonMcBride />
+          </div>
         </div>
+      </div>
     </div>
   </section>
 </template>

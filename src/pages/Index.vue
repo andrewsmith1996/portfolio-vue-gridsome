@@ -7,11 +7,11 @@
             <Header />
               <div class="gradient-wrapper">
                 <AboutPanel />
-                 <ProjectShowcase />
-                <!-- <FrontendSkills /> -->
-                <!-- <BackendSkills /> -->
+                <ProjectShowcase />
+                <FrontendSkills />
+                <BackendSkills />
                 <Education />
-                <!-- <Projects /> -->
+                <Projects />
                 <Contact /> 
               </div>
             <Footer />
