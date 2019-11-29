@@ -2,23 +2,22 @@
   <section class="projects-panel">
     <div class="container">
         <ProjectShowcaseHeader />
-        <Gluco />
+         <!-- <Gluco /> -->
         <Memories />
         <Hoptical />
         <ImageIdentifier />
         <BloodSugarAppMagik />
-        <DataDashboard />
+        <!-- <DataDashboard /> -->
         <GeolocationWeatherApp />
         <HackbustersGame />  
         
-        <div class="row">
-            <div class="col-sm-6 col-sm-offset-0 col-xs-10 col-xs-offset-1">
-                <InconnectCables />
-            </div>
-
-            <div class="col-sm-6 col-sm-offset-0 col-xs-10 col-xs-offset-1">
-                <EspressoDesign />
-            </div>
+        <div class="projects__screens">
+          <div class="projects__screen">
+            <InconnectCables />
+          </div>
+          <div class="projects__screen">
+            <EspressoDesign />
+          </div>
         </div>
     </div>
   </section>

@@ -11,7 +11,7 @@ body {
 	padding: 0;
 }
 
-h1, h2, p {
+h1, h2, p, li {
 	color: #fff;
 }
 
@@ -23,6 +23,9 @@ p, li {
 $the-andrew-blue: #004e92;
 $grey-light:darken(#fff, 13%);
 
+.subtitle {
+	color:$grey-light;
+}
 
 @mixin transition{
 	-webkit-transition: all 0.3s ease;
@@ -152,6 +155,60 @@ $grey-light:darken(#fff, 13%);
 		width: 50px;
 	}
 }
+
+.project-showcase {
+	&__header {
+
+	}
+}
+
+.project {
+	&__simple {
+		display:flex;
+		&-content {
+			display:flex;
+			flex-direction: column;
+			flex-basis:100%;
+			flex-grow:1;
+		}	
+
+		&-screenshots {
+			display:flex;
+			justify-content: center;
+			flex-basis:100%;
+			flex-grow:1;
+		}
+
+		&-screenshot {
+			width:150px; //TODO REMOVE
+		}
+	}
+
+	&__features-list {
+
+	}
+	
+	&__title {
+		color:#fff;
+		font-size:23px;
+	}
+
+	&__technologies {
+		color:$grey-light;
+		margin-bottom:20px;
+		font-size:18px;
+	}
+
+	&__description {
+
+	}
+}
+
+.projects__screens {
+	display:flex;
+	justify-content: center;
+}
+
 .education {
 
 	&__header {
