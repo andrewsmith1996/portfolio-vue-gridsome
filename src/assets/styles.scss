@@ -165,6 +165,7 @@ $grey-light:darken(#fff, 13%);
 .project {
 	&__simple {
 		display:flex;
+
 		&-content {
 			display:flex;
 			flex-direction: column;
@@ -177,6 +178,13 @@ $grey-light:darken(#fff, 13%);
 			justify-content: center;
 			flex-basis:100%;
 			flex-grow:1;
+			&--row {
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				flex-basis:100%;
+				flex-grow:1;
+			}
 		}
 
 		&-screenshot {

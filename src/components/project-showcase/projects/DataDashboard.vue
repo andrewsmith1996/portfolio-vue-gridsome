@@ -1,14 +1,12 @@
 <template>
-  <div class="row">
-    <div class="col-sm-12 col-md-4 col-sm-offset-0 col-xs-10 col-xs-offset-1">
-        <div class="app-description">
-            <h3>Personal Data Dashboard</h3>
-            <h6>React, Flexbox</h6>
-            <p>A ReactJS project that utilises a variety of third-party APIs to display and organise useful personal information including unique iCal calendar integration, WunderList integration and both news and weather APIs.<br><br>This web app also features on-demand refreshing of information, CSS animation and a layout built using Flexbox.</p>
-        </div>
+   <div class="project__simple">
+    <div class="project__simple-content">
+        <h3 class="project__title">Personal Data Dashboard</h3>
+        <h6 class="project__technologies">React, Flexbox</h6>
+        <p class="project__description">A ReactJS project that utilises a variety of third-party APIs to display and organise useful personal information including unique iCal calendar integration, WunderList integration and both news and weather APIs.<br><br>This web app also features on-demand refreshing of information, CSS animation and a layout built using Flexbox.</p>
     </div>
-    <div class="col-sm-12 col-md-8 col-sm-offset-0 col-xs-10 col-xs-offset-1">
-        <g-image src="~/assets/images/websites/dashboard-reactjs.png" class="img-responsive project-app" alt="ReactJS data dashboard project" />
+    <div class="project__simple-screenshots">
+        <g-image src="~/assets/images/websites/dashboard-reactjs.png" class="project__simple-screenshot" alt="ReactJS data dashboard project" />
     </div>
   </div>
 </template>

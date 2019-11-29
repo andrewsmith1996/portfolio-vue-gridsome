@@ -2,12 +2,12 @@
   <section class="projects-panel">
     <div class="container">
         <ProjectShowcaseHeader />
-         <!-- <Gluco /> -->
+        <Gluco />
         <Memories />
         <Hoptical />
         <ImageIdentifier />
         <BloodSugarAppMagik />
-        <!-- <DataDashboard /> -->
+        <DataDashboard />
         <GeolocationWeatherApp />
         <HackbustersGame />  
         
