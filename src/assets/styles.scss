@@ -218,6 +218,17 @@ p, li {
 	flex-basis:100%;
 	flex-grow:1;
 	justify-content: center;
+
+	@include transition();
+	
+	&:hover,&:focus{
+		transform:scale(1.10);
+
+		.project-screen__title,
+		.project-screen__caption{
+			opacity: 0;
+		}
+	}
 	
 	&__link {
 		display: flex;
@@ -229,11 +240,13 @@ p, li {
 		text-align:center;
 		color: $white;
 		font-size:20px;
+		@include transition();
 	}
 
 	&__caption {
 		text-align:center;
 		font-size:12px;
+		@include transition();
 	}
 }
 
@@ -322,6 +335,10 @@ p, li {
 		flex-direction: column;
 		align-items: center;
 		color: $white;
+	}
+
+	&__placement-date {
+		margin-bottom:10px;
 	}
 
 	&__modules {
@@ -448,10 +465,6 @@ p, li {
 	&__container {
 		display:flex;
 		@include section-spacing();
-
-		&--reverse {
-			flex-direction: row-reverse;
-		}
 	}
 
 	&__skills-content {
