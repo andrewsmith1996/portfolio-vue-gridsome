@@ -3,7 +3,8 @@
     <a href="https://www.inconnectcables.co.uk" target="_blank" class="project-screen__link">
       <g-image src="~/assets/images/websites/inconnect-cables.png" width="555" alt="Inconnect Cables website - Built at Cursor" />
   </a>
-  <p class="project-caption"><span>Inconnect Cables</span><br>HTML, CSS, JavaScript, CraftCMS based on provided designs<br>Built on placement at <a href="https://cursor.co.uk" target="_blank">Cursor</a></p>
+  <h5 class="project-screen__title">Inconnect Cables</h5>
+  <p class="project-screen__caption">HTML, CSS, JavaScript, CraftCMS based on provided designs<br>Built on placement at <a href="https://cursor.co.uk" target="_blank">Cursor</a></p>
   </div>
 </template>
 

@@ -1,7 +1,7 @@
 <template>
   <div class="project-screen">
     <g-image src="~/assets/images/websites/steve-nash-fashion.png" width="750" alt="Steve Nash fashion designer website" />
-    <p class="project-caption text-center"><span>Steve Nash Fashion Designer Portfolio Website</span></p>
+    <h5 class="project-screen__title">Steve Nash Fashion Designer Portfolio Website</h5>
   </div>
 </template>
 

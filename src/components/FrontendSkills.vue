@@ -5,13 +5,13 @@
       <div class="skills__container">
           <div class="skills__skills-content">
               <h3 class="skills__list-title">Front-end development</h3>
-              <ul>
+              <ul class="skills__list">
                   <li><span></span>HTML, CSS, LESS, Bootstrap</li>
                   <li><span></span>JavaScript, JQuery, AJAX</li>
                   <li><span></span>UX & UI design, Accessibility, SEO</li>
               </ul>
               <h3 class="skills__list-title">Non-agency experience</h3>
-              <ul>
+              <ul class="skills__list">
                   <li><span></span>ReactJS, Vue.js, TypeScript</li>
                   <li><span></span>Android Development (Java)</li>
                   <li><span></span>Ionic Framework, React Native</li>

@@ -10,8 +10,30 @@ $the-andrew-blue: #004e92;
 $white: white;
 $grey-light:darken($white, 13%);
 
+@mixin inner-container {
+	width:85%;
+	margin:0 auto;
+}
+
+@mixin section-spacing {
+	padding:40px 0;
+}
+
+
+@mixin transition($speed: 0.3s){
+	-webkit-transition: all $speed ease;
+	-moz-transition: all $speed ease;
+	-ms-transition: all $speed ease;
+	-o-transition: all $speed ease;
+}
+
 a {
 	color: $grey-light;
+	@include transition(0.15s);
+
+	&:hover, &:active {
+		color: darken($grey-light, 10%);
+	}
 }
 
 * {
@@ -28,20 +50,10 @@ p, li {
 	font-size:14px;
 }
 
-@mixin inner-container {
-	width:85%;
-	margin:0 auto;
-}
+
 
 .subtitle {
 	color:$grey-light;
-}
-
-@mixin transition{
-	-webkit-transition: all 0.3s ease;
-	-moz-transition: all 0.3s ease;
-	-ms-transition: all 0.3s ease;
-	-o-transition: all 0.3s ease;
 }
 
 @mixin on-circle($item-count, $circle-size, $item-size) {
@@ -112,9 +124,9 @@ p, li {
 		display: flex;
 		justify-content: center;
 		flex-basis: 100%;
-		flex: 1.5;
+		flex: 1;
 
-		@include on-circle($item-count: 6, $circle-size: 20em, $item-size: 6em); 
+		@include on-circle($item-count: 6, $circle-size: 18em, $item-size: 5.5em); 
 		
 		img { 
 			display: block; 
@@ -128,10 +140,14 @@ p, li {
 
 	&__title {
 		font-size: 60px;
+		font-weight:500;
+		height:70px;
 	}
 
 	&__subtitle {
 		font-size: 32px;
+		font-weight:200;
+		margin-bottom:15px;
 	}
 
 	&__intro {
@@ -153,6 +169,7 @@ p, li {
 }
 
 .about-panel {
+	@include section-spacing();
 	
 	&__inner-container {
 		display:flex;
@@ -170,13 +187,20 @@ p, li {
 		text-align:center;
 	}
 
+	&__block-title {
+		margin-bottom:10px;
+		font-size:24px;
+	}
+
 	&__block-icon {
 		height: 50px;
 		width: 50px;
+		margin-bottom:15px;
 	}
 }
 
 .projects-panel {
+	@include section-spacing();
 	&__inner-container {
 		@include inner-container();
 	}
@@ -191,19 +215,32 @@ p, li {
 .project-screen {
 	display:flex;
 	flex-direction: column;
-	justify-content: center;
 	flex-basis:100%;
 	flex-grow:1;
+	justify-content: center;
 	
 	&__link {
 		display: flex;
 		justify-content: center;
+		margin-bottom: 10px;
+	}
+
+	&__title {
+		text-align:center;
+		color: $white;
+		font-size:20px;
+	}
+
+	&__caption {
+		text-align:center;
+		font-size:12px;
 	}
 }
 
 .project {
 	&__simple {
 		display:flex;
+		@include section-spacing();
 
 		&-content {
 			display:flex;
@@ -225,6 +262,15 @@ p, li {
 				flex-grow:1;
 			}
 		}
+
+		&-screenshot {
+			margin: 0 10px;
+
+			@include transition();
+			&:hover, &:active {
+				transform:scale(1.1);
+			}
+		}
 	}
 
 	&__features-list {
@@ -239,11 +285,12 @@ p, li {
 	&__technologies {
 		color:$grey-light;
 		margin-bottom:20px;
-		font-size:18px;
+		font-size:14px;
+		font-weight: 500;
 	}
 
 	&__description {
-
+		margin-bottom:20px;
 	}
 }
 
@@ -253,6 +300,7 @@ p, li {
 }
 
 .education {
+	@include section-spacing();
 
 	&__inner-container {
 		@include inner-container;
@@ -263,6 +311,8 @@ p, li {
 		flex-direction: column;
 		justify-content: center;
 		align-items: center;
+		text-align:center;
+		color:#fff;
 	}
 
 	&__placement {
@@ -271,6 +321,7 @@ p, li {
 		justify-content: center;
 		flex-direction: column;
 		align-items: center;
+		color: $white;
 	}
 
 	&__modules {
@@ -284,12 +335,22 @@ p, li {
 		align-items: center;
 	}
 
+	&__modules-title {
+		color: $the-andrew-blue;
+		font-size:24px;
+		margin-bottom:15px;
+	}
+
 	&__modules-item {
 		color: $white;
+		line-height:28px;
+		list-style: none;
+		text-align: center;
 	}
 	
 	&__row {
 		display:flex;
+		color:#fff;
 	}
 
 	&__column {
@@ -318,6 +379,8 @@ p, li {
 		flex-direction: column;
 		flex-basis: 20%;
 		flex-grow: 1;
+		align-items: center;
+		justify-content: space-between;
 
 		background: url('../assets/images/backgrounds/bg.png') no-repeat center center;
 		background-attachment: fixed;
@@ -330,8 +393,7 @@ p, li {
 		padding:18px;
 		box-shadow: 0 8px 14px rgba(0,0,0,.09), 0 4px 6px rgba(0,0,0,.09);
 		@include transition;
-		height:260px;
-		margin-bottom:35px;
+		margin:10px;
 		position:relative;
 
 		&:after {
@@ -352,12 +414,21 @@ p, li {
 		}
 	}
 
-	&__card-title, &__card-description, &__card-date  {
-		z-index:3;
+	&__card-content, &__card-image {
+		z-index:2;
+	}
+
+	&__card-image {
+		padding:25px 0;
 	}
 
 	&__card-title {
 		color: $white;
+		margin-bottom:10px;
+	}
+
+	&__card-description {
+		line-height:23px;
 	}
 
 	&__card-date {
@@ -368,13 +439,15 @@ p, li {
 }
 
 .skills {
-	
+	@include section-spacing();
+
 	&__inner-container {
 		@include inner-container;
 	}
 
 	&__container {
 		display:flex;
+		@include section-spacing();
 
 		&--reverse {
 			flex-direction: row-reverse;
@@ -396,6 +469,14 @@ p, li {
 
 	&__list-title {
 		color: #fff;
+		font-weight:500;
+		font-size: 26px;
+	}
+
+	&__list {
+		li {
+			margin-bottom:5px;
+		}
 	}
 }
 
@@ -407,17 +488,17 @@ p, li {
 }
 
 .contact {
-
+	@include section-spacing();
 	&__inner-container {
 		@include inner-container;
 	}
 
 	&__title {
-
 	}
 
 	&__subtitle {
-
+		margin-bottom:10px;
+		color: $grey-light;
 	}
 
 	&__container {
@@ -434,12 +515,14 @@ p, li {
 		flex-basis:100%; 
 		background-color:$the-andrew-blue;
 		background: url('../assets/images/backgrounds/bg.png') no-repeat center center;
-	transform: translateZ(0);-webkit-transform: translateZ(0);
+		transform: translateZ(0);-webkit-transform: translateZ(0);
 		background-attachment: fixed;
 		background-size:250%;
 		border-radius:18px;
 		padding:18px;
 		box-shadow: 0 8px 14px rgba(0,0,0,.09), 0 4px 6px rgba(0,0,0,.09);
+		position: relative;
+		
 		&:after {
 			content: '';
 			width: 100%;
@@ -451,8 +534,14 @@ p, li {
 			border-radius:18px;
 			z-index: 1;
 		}
-		
+
+		h4, span, p, a {
+			z-index:3;
+			color:$white;
+			position:relative;
+		}
 	}
+
 }
 
 .social__links {
@@ -477,5 +566,9 @@ p, li {
 
 	&__text {
 		color:$white;
+		a {
+			color: $white;
+			text-decoration: none;
+		}
 	}
 }

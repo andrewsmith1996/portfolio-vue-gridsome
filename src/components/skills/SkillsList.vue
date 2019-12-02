@@ -1,6 +1,6 @@
 
 <template>
-   <ul class="list-unstyled">
+   <ul class="skills__list">
       <li v-for="(skill, index) in skills" :key="index"><span></span>{{ skill }}</li>
    </ul>
 </template>
