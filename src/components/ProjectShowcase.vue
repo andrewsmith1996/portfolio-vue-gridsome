@@ -1,24 +1,24 @@
 <template>
   <section class="projects-panel">
-    <div class="container">
-        <ProjectShowcaseHeader />
-        <Gluco />
-        <Memories />
-        <Hoptical />
-        <ImageIdentifier />
-        <BloodSugarAppMagik />
-        <DataDashboard />
-        <GeolocationWeatherApp />
-        <HackbustersGame />  
-        
-        <div class="projects__screens">
-          <div class="projects__screen">
-            <InconnectCables />
-          </div>
-          <div class="projects__screen">
-            <EspressoDesign />
-          </div>
+    <div class="projects-panel__inner-container">
+      <ProjectShowcaseHeader />
+      <Gluco />
+      <Memories />
+      <Hoptical />
+      <ImageIdentifier />
+      <BloodSugarAppMagik />
+      <DataDashboard />
+      <GeolocationWeatherApp />
+      <HackbustersGame />  
+      
+      <div class="projects__screens">
+        <div class="projects__screen">
+          <InconnectCables />
         </div>
+        <div class="projects__screen">
+          <EspressoDesign />
+        </div>
+      </div>
     </div>
   </section>
 </template>

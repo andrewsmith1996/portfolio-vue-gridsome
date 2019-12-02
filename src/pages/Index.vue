@@ -2,21 +2,17 @@
   <!DOCTYPE HTML>
     <html lang="en">
       <body>
-        <div class="global__container">
-          <div class="global__container-inner">
-            <Header />
-              <div class="gradient-wrapper">
-                <AboutPanel />
-                <ProjectShowcase />
-                <FrontendSkills />
-                <BackendSkills />
-                <Education />
-                <Projects />
-                <Contact /> 
-              </div>
-            <Footer />
-            </div>
-        </div>
+        <Header />
+          <div class="gradient-wrapper">
+            <AboutPanel />
+            <ProjectShowcase />
+            <FrontendSkills />
+            <BackendSkills />
+            <Education />
+            <Projects />
+            <Contact /> 
+          </div>
+        <Footer />
       </body>
     </html>
 </template>

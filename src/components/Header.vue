@@ -1,7 +1,9 @@
 <template>
   <header class="header">
-    <HeaderContent class="header__content" :title="globalContent.headerTitle" :jobRole="globalContent.headerJobRole" :intro="globalContent.headerIntro"/>
-    <Technologies class="header__technologies"/>
+    <div class="header__inner-container">
+        <HeaderContent class="header__content" :title="globalContent.headerTitle" :jobRole="globalContent.headerJobRole" :intro="globalContent.headerIntro"/>
+        <Technologies class="header__technologies"/>
+      </div>
   </header>
 </template>
 

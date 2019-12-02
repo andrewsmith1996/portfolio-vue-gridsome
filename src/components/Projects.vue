@@ -1,5 +1,6 @@
 <template>
    <section class="projects">
+      <div class="projects__inner-container">
         <div class="project-showcase__header">
             <h2>{{ projectsContent.title }}</h2>
             <p class="subtitle">{{ projectsContent.subtitle }}.</p>
@@ -96,6 +97,7 @@
                 <p class="projects__card-description">2:1 in the Brilliant Club programme where I attended tutorials and completed a University assignment whilst at Sixth Form.</p>
                 <span class="projects__card-date">2013</span>
             </div>
+        </div>
         </div>
   </section>
 </template>

@@ -24,6 +24,10 @@ p, li {
 	font-size:14px;
 }
 
+@mixin inner-container {
+	width:85%;
+	margin:0 auto;
+}
 
 .subtitle {
 	color:$grey-light;
@@ -83,17 +87,21 @@ p, li {
 	background-size: cover;
 	position: relative;
 	height:100%;
-	display: flex;
-	align-items:center;
-	justify-content: center;
 	width: 100%;
 	padding:75px 0;
+
+	&__inner-container{
+		@include inner-container;
+		display: flex;
+		align-items:center;
+		justify-content: center;
+	}
 
 	&__content {
 		flex-basis: 100%;
 		flex: 1;
 	}
-	
+
 	&__technologies {
 		display: flex;
 		justify-content: center;
@@ -139,7 +147,11 @@ p, li {
 }
 
 .about-panel {
-	display:flex;
+	
+	&__inner-container {
+		display:flex;
+		@include inner-container();
+	}
 	
 	&__block {
 		color: $white;
@@ -155,6 +167,12 @@ p, li {
 	&__block-icon {
 		height: 50px;
 		width: 50px;
+	}
+}
+
+.projects-panel {
+	&__inner-container {
+		@include inner-container();
 	}
 }
 
@@ -221,6 +239,10 @@ p, li {
 
 .education {
 
+	&__inner-container {
+		@include inner-container;
+	}
+
 	&__header {
 		display:flex;
 		flex-direction: column;
@@ -266,6 +288,11 @@ p, li {
 }
 
 .projects {
+
+	&__inner-container {
+		@include inner-container;
+	}
+
 	&__cards {
 		display:flex;
 		flex-wrap: wrap;
@@ -326,6 +353,11 @@ p, li {
 }
 
 .skills {
+	
+	&__inner-container {
+		@include inner-container;
+	}
+
 	&__container {
 		display:flex;
 
@@ -346,6 +378,10 @@ p, li {
 		flex-basis:100%;
 		flex-grow:1;
 	}
+
+	&__list-title {
+		color: #fff;
+	}
 }
 
 .screens {
@@ -356,6 +392,11 @@ p, li {
 }
 
 .contact {
+
+	&__inner-container {
+		@include inner-container;
+	}
+
 	&__title {
 
 	}

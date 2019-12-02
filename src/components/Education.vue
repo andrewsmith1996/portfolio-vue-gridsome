@@ -1,12 +1,14 @@
 <template>
    <section class="education">
-    <EducationHeader />
-    <div class="education__row">
-      <YearModules class="education__column" :title="educationContent.year_1_title" :modules="educationContent.year_1_modules" />
-      <YearModules class="education__column" :title="educationContent.year_2_title" :modules="educationContent.year_2_modules" />
-      <YearModules class="education__column" :title="educationContent.year_3_title" :modules="educationContent.year_3_modules" />
-    </div>
-    <PlacementYearRow />
+    <div class="education__inner-container">
+      <EducationHeader />
+      <div class="education__row">
+        <YearModules class="education__column" :title="educationContent.year_1_title" :modules="educationContent.year_1_modules" />
+        <YearModules class="education__column" :title="educationContent.year_2_title" :modules="educationContent.year_2_modules" />
+        <YearModules class="education__column" :title="educationContent.year_3_title" :modules="educationContent.year_3_modules" />
+      </div>
+      <PlacementYearRow />
+      </div>
   </section>
 </template>
 
