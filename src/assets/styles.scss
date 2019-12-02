@@ -10,6 +10,10 @@ $the-andrew-blue: #004e92;
 $white: white;
 $grey-light:darken($white, 13%);
 
+a {
+	color: $grey-light;
+}
+
 * {
 	margin: 0;
 	padding: 0;
@@ -179,6 +183,19 @@ p, li {
 .project-showcase {
 	&__header {
 
+	}
+}
+
+.project-screen {
+	display:flex;
+	flex-direction: column;
+	justify-content: center;
+	flex-basis:100%;
+	flex-grow:1;
+	
+	&__link {
+		display: flex;
+		justify-content: center;
 	}
 }
 
@@ -419,7 +436,7 @@ p, li {
 		flex-basis:100%; 
 		background-color:$the-andrew-blue;
 		background: url('../assets/images/backgrounds/bg.png') no-repeat center center;
-		transform: translateZ(0);-webkit-transform: translateZ(0);
+	transform: translateZ(0);-webkit-transform: translateZ(0);
 		background-attachment: fixed;
 		background-size:250%;
 		border-radius:18px;
@@ -442,10 +459,9 @@ p, li {
 
 .social__links {
 	display:flex;
-	align-items: center;
 
 	&-link {	
-		width:30px;
+		margin-right:10px;
 		@include transition;	
 		&:hover,&:focus{
 			transform:scale(1.10);
@@ -458,8 +474,10 @@ p, li {
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
+	background-color:#26D0CE;
+	padding:25px 0;
 
 	&__text {
-		color:black !important; //REMOVE
+		color:$white;
 	}
 }
