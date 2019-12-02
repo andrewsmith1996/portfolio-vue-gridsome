@@ -10,8 +10,8 @@
         </p>
     </div>
     <div class="project__simple-screenshots">
-        <g-image src="~/assets/images/apps/geolocation-one.png" class="project__simple-screenshot" alt="React Native Geolocation Weather Forecast app" />
-        <g-image src="~/assets/images/apps/geolocation-two.png" class="project__simple-screenshot" alt="React Native Geolocation Weather Forecast app" />
+        <g-image src="~/assets/images/apps/geolocation-one.png" width="263" class="project__simple-screenshot" alt="React Native Geolocation Weather Forecast app" />
+        <g-image src="~/assets/images/apps/geolocation-two.png" width="263" class="project__simple-screenshot" alt="React Native Geolocation Weather Forecast app" />
     </div>
   </div>
 </template>

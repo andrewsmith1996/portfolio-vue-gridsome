@@ -15,9 +15,9 @@
     </div>
 
     <div class="project__simple-screenshots">
-        <g-image src="~/assets/images/apps/image-recognition-react-native-1.png" class="project__simple-screenshot" alt="React Native image recognition app" />
-        <g-image src="~/assets/images/apps/image-recognition-react-native-2.png" class="project__simple-screenshot" alt="React Native image recognition app" />
-        <g-image src="~/assets/images/apps/image-recognition-react-native-3.png" class="project__simple-screenshot" alt="React Native image recognition app" />
+        <g-image src="~/assets/images/apps/image-recognition-react-native-1.png" width="263" class="project__simple-screenshot" alt="React Native image recognition app" />
+        <g-image src="~/assets/images/apps/image-recognition-react-native-2.png" width="263" class="project__simple-screenshot" alt="React Native image recognition app" />
+        <g-image src="~/assets/images/apps/image-recognition-react-native-3.png" width="263" class="project__simple-screenshot" alt="React Native image recognition app" />
     </div>
   </div>
 </template>

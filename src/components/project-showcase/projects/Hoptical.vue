@@ -18,9 +18,9 @@
             </ul> 
         </div>
         <div class="project__simple-screenshots">
-            <g-image src="~/assets/images/apps/hoptical-one.png" class="project__simple-screenshot" alt="Hoptical Craft Beer Tracking app built in Android" />
-            <g-image src="~/assets/images/apps/hoptical-three.png" class="project__simple-screenshot" alt="Hoptical Craft Beer Tracking app built in Android" />
-            <g-image src="~/assets/images/apps/hoptical-two.png" class="project__simple-screenshot" alt="Hoptical Craft Beer Tracking app built in Android" />
+            <g-image src="~/assets/images/apps/hoptical-one.png" width="263" class="project__simple-screenshot" alt="Hoptical Craft Beer Tracking app built in Android" />
+            <g-image src="~/assets/images/apps/hoptical-three.png" width="263" class="project__simple-screenshot" alt="Hoptical Craft Beer Tracking app built in Android" />
+            <g-image src="~/assets/images/apps/hoptical-two.png" width="263" class="project__simple-screenshot" alt="Hoptical Craft Beer Tracking app built in Android" />
         </div>
     </div>
 </template>

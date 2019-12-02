@@ -6,7 +6,7 @@
         <p class="project__description">A ReactJS project that utilises a variety of third-party APIs to display and organise useful personal information including unique iCal calendar integration, WunderList integration and both news and weather APIs.<br><br>This web app also features on-demand refreshing of information, CSS animation and a layout built using Flexbox.</p>
     </div>
     <div class="project__simple-screenshots">
-        <g-image src="~/assets/images/websites/dashboard-reactjs.png" class="project__simple-screenshot" alt="ReactJS data dashboard project" />
+        <g-image width="750" src="~/assets/images/websites/dashboard-reactjs.png" class="project__simple-screenshot" alt="ReactJS data dashboard project" />
     </div>
   </div>
 </template>

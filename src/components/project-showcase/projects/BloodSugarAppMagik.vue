@@ -7,9 +7,9 @@
                 giving graph illustrations and a practical representation of blood sugar results over time.</p>
         </div>
         <div class="project__simple-screenshots">
-            <g-image src="~/assets/images/apps/bloodsugarappmagik-one.png" class="project__simple-screenshot" alt="Blood Sugar App Magik built at Hack24" />
-            <g-image src="~/assets/images/apps/bloodsugarappmagik-two.png" class="project__simple-screenshot" alt="Blood Sugar App Magik built at Hack24" />
-            <g-image src="~/assets/images/apps/bloodsugarappmagik-three.png" class="project__simple-screenshot" alt="Blood Sugar App Magik built at Hack24" />
+            <g-image src="~/assets/images/apps/bloodsugarappmagik-one.png" width="263" class="project__simple-screenshot" alt="Blood Sugar App Magik built at Hack24" />
+            <g-image src="~/assets/images/apps/bloodsugarappmagik-two.png" width="263" class="project__simple-screenshot" alt="Blood Sugar App Magik built at Hack24" />
+            <g-image src="~/assets/images/apps/bloodsugarappmagik-three.png" width="263" class="project__simple-screenshot" alt="Blood Sugar App Magik built at Hack24" />
         </div>
     </div>
 </template>

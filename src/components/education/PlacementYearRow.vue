@@ -4,7 +4,7 @@
   <div class="education__placement">
       <h3><strong>Industrial placement year</strong></h3>
       <p>July 2017 - July 2018.</p>
-      <g-image src="~/assets/images/icons/work.png" alt="Working" />
+      <g-image width="50" rc="~/assets/images/icons/work.png" alt="Working" />
   </div>
 </template>
 

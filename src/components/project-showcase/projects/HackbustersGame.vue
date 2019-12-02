@@ -10,7 +10,7 @@
       </p>
       </div>
     <div class="project__simple-screenshots">
-        <g-image src="~/assets/images/apps/hackbusters.png" class="project__simple-screenshot" alt="Socket.IO, Node.js and Express interactive Dambusters Game" />
+        <g-image src="~/assets/images/apps/hackbusters.png" width="360" class="project__simple-screenshot" alt="Socket.IO, Node.js and Express interactive Dambusters Game" />
     </div>
   </div>
 </template>

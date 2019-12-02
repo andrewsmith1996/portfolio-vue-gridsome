@@ -93,12 +93,14 @@ p, li {
 	height:100%;
 	width: 100%;
 	padding:75px 0;
+	margin-bottom:0;
 
 	&__inner-container{
 		@include inner-container;
 		display: flex;
 		align-items:center;
 		justify-content: center;
+		z-index:2;
 	}
 
 	&__content {
@@ -112,7 +114,7 @@ p, li {
 		flex-basis: 100%;
 		flex: 1.5;
 
-		@include on-circle($item-count: 7, $circle-size: 20em, $item-size: 6em); 
+		@include on-circle($item-count: 6, $circle-size: 20em, $item-size: 6em); 
 		
 		img { 
 			display: block; 
@@ -222,10 +224,6 @@ p, li {
 				flex-basis:100%;
 				flex-grow:1;
 			}
-		}
-
-		&-screenshot {
-			width:150px; //TODO REMOVE
 		}
 	}
 

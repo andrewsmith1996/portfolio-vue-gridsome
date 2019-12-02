@@ -2,7 +2,7 @@
 
 <template>
   <div>
-    <g-image src="~/assets/images/icons/web.png" :alt="panelInfo.alt" />
+    <g-image width="50" src="~/assets/images/icons/web.png" :alt="panelInfo.alt" />
     <h3 class="web hidden-xs">{{ panelInfo.title }}</h3>
     <h3 class="web visible-xs">{{ panelInfo.title }}></h3>
     <p>{{ panelInfo.description }} </p>

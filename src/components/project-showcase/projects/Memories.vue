@@ -19,9 +19,9 @@
       </ul> 
     </div>
     <div class="project__simple-screenshots">
-      <g-image src="~/assets/images/apps/memories_one.png" class="project__simple-screenshot" alt="Memories app built in Ionic 4" /> 
-      <g-image src="~/assets/images/apps/memories_two.png" class="project__simple-screenshot" alt="Memories app built in Ionic 4" /> 
-      <g-image src="~/assets/images/apps/memories_four.png" class="project__simple-screenshot" alt="Memories app built in Ionic 4" /> 
+      <g-image src="~/assets/images/apps/memories_one.png" width="263" class="project__simple-screenshot" alt="Memories app built in Ionic 4" /> 
+      <g-image src="~/assets/images/apps/memories_two.png" width="263" class="project__simple-screenshot" alt="Memories app built in Ionic 4" /> 
+      <g-image src="~/assets/images/apps/memories_four.png" width="263" class="project__simple-screenshot" alt="Memories app built in Ionic 4" /> 
     </div>
   </div>
 
