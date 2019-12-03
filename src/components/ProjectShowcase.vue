@@ -6,8 +6,8 @@
       <Memories  v-scroll-reveal.reset  />
       <Hoptical  v-scroll-reveal.reset  />
       <ImageIdentifier  v-scroll-reveal.reset />
-      <BloodSugarAppMagik  v-scroll-reveal.reset  />
       <DataDashboard  v-scroll-reveal.reset  />
+      <BloodSugarAppMagik  v-scroll-reveal.reset  />
       <GeolocationWeatherApp  v-scroll-reveal.reset  />
       <HackbustersGame  v-scroll-reveal.reset />  
       

@@ -2,53 +2,53 @@
    <section class="projects">
       <div class="projects__inner-container">
         <div class="project-showcase__header">
-            <h2>{{ projectsContent.title }}</h2>
+            <h2>Projects &amp; Extra Curricular</h2>
             <p class="subtitle">{{ projectsContent.subtitle }}</p>
         </div>
         <div class="projects__cards">
-            <div class="projects__card">
+            <div class="projects__card projects__card--three">
                 <div class="projects__card-content">
-                    <h3 class="projects__card-title">Junior Developer placement year</h3>
-                    <p class="projects__card-description">Year in industry creating websites and online software at <a href="https://cursor.co.uk" target="_blank">Cursor</a> for customers and clients across a broad range of industries. Helpdesk technical support, designing front-end wireframes and visuals and general software development processes. Involved in client meetings, working closely with professional clients and participating in R&D projects.</p>
+                    <h3 class="projects__card-title">Industrial Placement year</h3>
+                    <p class="projects__card-description">Year in industry creating websites and online software at <a href="https://cursor.co.uk" target="_blank">Cursor</a> for customers and clients across a broad range of industries. Helpdesk technical support, designing front-end wireframes and visuals and general software development processes. Involved in client meetings, working closely with professional clients and participating in R&amp;D projects.</p>
                 </div>
                 <g-image class="projects__card-image" width="110" src="~/assets/images/projects/cursor.png" alt="MTA Exam" />
                 <span class="projects__card-date">2017 - 2018</span>
             </div>
 
-            <div class="projects__card">
+            <div class="projects__card projects__card--three">
                 <div class="projects__card-content">
-                    <h3 class="projects__card-title">Founder &amp; President of the UoL Diabetes Group </h3>
+                    <h3 class="projects__card-title">Founder &amp; President of the UoL Diabetes Group</h3>
                     <p class="projects__card-description">Founded &amp; President of the University of Lincoln Diabetes Group. Maintaining responsibilities, organisation, leadership skills, delegating roles and communication. Organised events, fundraisers and liased with resarchers regarding research projects.</p>
                 </div>
                 <g-image class="projects__card-image" width="130" src="~/assets/images/projects/diabetes-group.png" alt="MTA Exam" />
                 <span class="projects__card-date">2015 - 2017</span>
             </div>
 
-            <div class="projects__card">
+            <div class="projects__card projects__card--three">
+                <div class="projects__card-content">
+                    <h3 class="projects__card-title">Google Cloud Platform Certification</h3>
+                    <p class="projects__card-description">Achieved the official Google Cloud Platform Fundamentals: Core Infrastructure Certficiation. <br>Click <a href="https://www.coursera.org/account/accomplishments/verify/YLLAVXGRLRBG">here</a> to view certification.</p>
+                </div>
+                <g-image class="projects__card-image" width="300" src="~/assets/images/projects/google_cloud.png" alt="MTA Exam" />
+                <span class="projects__card-date">2019</span>
+            </div>
+
+            <div class="projects__card with-img">
+                <div class="projects__card-content">
+                    <h3 class="projects__card-title">Microsoft Technology Associate</h3>
+                    <p class="projects__card-description">Officially certified as a Microsoft Technology Associate in HTML5 Application Development Fundamentals.</p>
+                </div>
+                <g-image class="projects__card-image" width="150" height="150" src="~/assets/images/assets/mta-logo.png" alt="MTA Exam" />
+                <span class="projects__card-date">2019</span>
+            </div>
+
+            <div class="projects__card projects__card">
                 <div class="projects__card-content">
                     <h3 class="projects__card-title">Computer Science Course Representative</h3>
                     <p class="projects__card-description">Course Representative for Computer Science at University. Ability to communicate well, plan well and manage time successfully.</p>
                 </div>
                 <g-image class="projects__card-image" width="200" src="~/assets/images/projects/uni-lincoln.png" alt="MTA Exam" />
                 <span class="projects__card-date">2015 - 2016</span>
-            </div>
-
-            <div class="projects__card">
-                <div class="projects__card-content">
-                    <h3 class="projects__card-title">Google Cloud Platform Certification</h3>
-                    <p class="projects__card-description">Achieved the official Google Cloud Platform Fundamentals: Core Infrastructure Certficiation. <br>Click <a href="https://www.coursera.org/account/accomplishments/verify/YLLAVXGRLRBG">here</a> to view certification.</p>
-                </div>
-                <g-image class="projects__card-image" width="200" src="~/assets/images/projects/google_cloud.png" alt="MTA Exam" />
-                <span class="projects__card-date">2019</span>
-            </div>
-           
-            <div class="projects__card with-img">
-                <div class="projects__card-content">
-                    <h3 class="projects__card-title">Microsoft Technology Associate</h3>
-                    <p class="projects__card-description">Officially certified as a Microsoft Technology Associate in HTML5 Application Development Fundamentals.</p>
-                </div>
-                <g-image class="projects__card-image" width="90" height="90" src="~/assets/images/assets/mta-logo.png" alt="MTA Exam" />
-                <span class="projects__card-date">2019</span>
             </div>
             
             <div class="projects__card">

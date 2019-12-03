@@ -2,7 +2,7 @@
    <div class="project__simple">
         <div class="project__simple-content">
             <h3 class="project__title">Hoptical</h3>
-            <h6 class="project__technologies">Android</h6>
+            <h6 class="project__technologies">Android, Java, Firebase</h6>
             <p class="project__description">Craft Beer tracker Android application showcasing a range of advanced Android concepts such as:</p>
             <ul class="project__features-list">
                 <li>Google Sign-in</li>
@@ -10,11 +10,11 @@
                 <li>Encrypted local SQL storage</li>
                 <li>Geolocation services</li>
                 <li>Offline capabilities</li>
-                <li>API calls & JSON parsing</li>
+                <li>API calls &amp; JSON parsing</li>
                 <li>Async tasks</li>
                 <li>Camera integration</li>
                 <li>Contacts directory integration</li>
-                <li>Fragments, Implicit & Explicit intents</li>
+                <li>Fragments, Implicit &amp; Explicit intents</li>
             </ul> 
         </div>
         <div class="project__simple-screenshots">

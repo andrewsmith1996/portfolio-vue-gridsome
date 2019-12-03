@@ -3,7 +3,7 @@
   <div class="contact__blog">
     <h2 class="contact__blog-preview__top-title">Latest from my blog</h2>
     <a href="https://thisdeveloperslife.wordpress.com/" target="_blank" class="contact__blog-preview__url">thisdeveloperslife.wordpress.com</a>
-    <carousel v-if="blogPosts">
+    <carousel v-if="blogPosts" :spacePadding="10" :spacePaddingMaxOffsetFactor="10" :centerMode="true">
       <slide v-for="(post, index) in blogPosts" :key="index" class="contact__blog-preview">
         <article>
           <h4 class="contact__blog-preview__title"><strong><a :href=post.url>{{ post.title }}</a></strong></h4>
@@ -20,7 +20,7 @@
 import { Component, Vue, Prop, Mixins } from "vue-property-decorator";
 import axios from 'axios';
 import * as moment from 'moment';
-const { Carousel, Slide }  = require('vue-carousel');
+const { Carousel, Slide } = require('vue-carousel');
 
 @Component({
    components: {

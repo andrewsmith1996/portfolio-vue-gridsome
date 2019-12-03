@@ -1,26 +1,21 @@
 <template>
-  <section class="skills">
-    <div class="skills__inner-container">
-      <SkillsHeader />
-      <div class="skills__container">
-          <div class="skills__skills-content">
-              <h3 class="skills__list-title">Front-end development</h3>
-              <ul class="skills__list">
-                  <li><span></span>HTML, CSS, LESS, Bootstrap</li>
-                  <li><span></span>JavaScript, JQuery, AJAX</li>
-                  <li><span></span>UX & UI design, Accessibility, SEO</li>
-              </ul>
-              <h3 class="skills__list-title">Non-agency experience</h3>
-              <ul class="skills__list">
-                  <li><span></span>ReactJS, Vue.js, TypeScript</li>
-                  <li><span></span>Android Development (Java)</li>
-                  <li><span></span>Ionic Framework, React Native</li>
-                  <li><span></span>SASS, Flexbox</li>
-              </ul>
-          </div>
-          <div class="skills__skills-example">
-              <LincolnHack />
-          </div>
+  <div>
+    <div class="skills__container">
+      <div class="skills__content-container">
+        <div class="skills__skills-content">
+            <h3 class="skills__list-title">Front-end development</h3>
+            <ul class="skills__list">
+                <li><span></span>ReactJS, Vue.js, TypeScript</li>
+                <li><span></span>HTML, CSS, LESS, Bootstrap</li>
+                <li><span></span>Ionic Framework, React Native</li>
+                <li><span></span>SASS, Flexbox</li>
+                <li><span></span>JQuery, AJAX</li>
+                <li><span></span>Android Development (Java)</li>
+            </ul>
+        </div>
+        <div class="skills__skills-example">
+            <LincolnHack />
+        </div>
       </div>
       <div class="screens">
         <div class="screens__row">
@@ -29,7 +24,7 @@
         </div>
       </div>
     </div>
-  </section>
+    </div>
 </template>
 
 <script lang="ts">

@@ -6,8 +6,7 @@
           <div class="gradient-wrapper">
             <AboutPanel v-scroll-reveal.reset />
             <ProjectShowcase />
-            <FrontendSkills v-scroll-reveal.reset />
-            <BackendSkills v-scroll-reveal.reset />
+            <Skills v-scroll-reveal.reset />
             <Education v-scroll-reveal.reset />
             <Projects v-scroll-reveal.reset />
             <Contact v-scroll-reveal.reset /> 
@@ -25,8 +24,7 @@ import Footer from '~/components/Footer.vue';
 import Contact from '~/components/Contact.vue';
 import Education from '~/components/Education.vue';
 import Projects from '~/components/Projects.vue';
-import BackendSkills from '~/components/BackendSkills.vue';
-import FrontendSkills from '~/components/FrontendSkills.vue';
+import Skills from '~/components/Skills.vue';
 import ProjectShowcase from '~/components/ProjectShowcase.vue';
 
 @Component({
@@ -37,8 +35,7 @@ import ProjectShowcase from '~/components/ProjectShowcase.vue';
     Contact,
     Education,
     Projects,
-    BackendSkills,
-    FrontendSkills,
+    Skills,
     ProjectShowcase
   }
 })
