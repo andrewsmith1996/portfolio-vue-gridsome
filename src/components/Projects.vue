@@ -11,6 +11,7 @@
                     <h3 class="projects__card-title">Junior Developer placement year</h3>
                     <p class="projects__card-description">Year in industry creating websites and online software at <a href="https://cursor.co.uk" target="_blank">Cursor</a> for customers and clients across a broad range of industries. Helpdesk technical support, designing front-end wireframes and visuals and general software development processes. Involved in client meetings, working closely with professional clients and participating in R&D projects.</p>
                 </div>
+                <g-image class="projects__card-image" width="110" src="~/assets/images/projects/cursor.png" alt="MTA Exam" />
                 <span class="projects__card-date">2017 - 2018</span>
             </div>
 
@@ -19,9 +20,8 @@
                     <h3 class="projects__card-title">Founder &amp; President of the UoL Diabetes Group </h3>
                     <p class="projects__card-description">Founded &amp; President of the University of Lincoln Diabetes Group. Maintaining responsibilities, organisation, leadership skills, delegating roles and communication. Organised events, fundraisers and liased with resarchers regarding research projects.</p>
                 </div>
-                <div class="projects__card-bottom">
-                    <span class="projects__card-date">2015 - 2017</span>
-                </div>
+                <g-image class="projects__card-image" width="130" src="~/assets/images/projects/diabetes-group.png" alt="MTA Exam" />
+                <span class="projects__card-date">2015 - 2017</span>
             </div>
 
             <div class="projects__card">
@@ -83,6 +83,7 @@
                     <h3 class="projects__card-title">IT Tutor (Volunteer)</h3>
                     <p class="projects__card-description">Volunteer at the Long Eaton 50+ Forum to teach 50+ year olds a better understanding in using their computing and mobile devices.</p>
                 </div>
+                <g-image class="projects__card-image" width="130" src="~/assets/images/projects/50-plus-forum.png" alt="MTA Exam" />
                 <span class="projects__card-date">2015 - present</span>
             </div>
         

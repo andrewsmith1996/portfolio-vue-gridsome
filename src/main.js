@@ -5,11 +5,13 @@ import DefaultLayout from '~/layouts/Default.vue'
 import Vuex from 'vuex'
 import store from "./store";
 import '~/assets/styles.scss'
+import VueScrollReveal from 'vue-scroll-reveal';
 
 export default function (Vue, { router, head, isClient, appOptions } ) {
   // Set default layout as a global component
   Vue.component('Layout', DefaultLayout)
   Vue.use(Vuex);
+  Vue.use(VueScrollReveal);
 
   appOptions.store = store;
 

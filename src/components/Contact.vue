@@ -7,9 +7,9 @@
       <p class="contact__subtitle">Get in touch</p>
       <div class="contact__container">
         <SocialLinks class="contact__social" :links="globalContent.socialLinks"/>
-        <BlogPreview class="contact__blog"/>
       </div>
-      </div>
+       <BlogPreview />
+    </div>
   </section>
 </template>
 

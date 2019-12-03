@@ -2,7 +2,7 @@
 <template>
   <div class="project-showcase__header">
     <h2>My work</h2>
-    <p class="subtitle">Take a look at some of my recent projects.</p>
+    <p class="subtitle">Take a look at some of my recent personal projects.</p>
   </div>
 </template>
 

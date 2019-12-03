@@ -1,9 +1,10 @@
 <template>
    <div class="education__header">
-    <h2>BSc (Hons) Computer Science</h2>
-    <h4>First Class Honours - 85%. </h4>
-    <p>2015 - 2019</p>
-    <p>Won both the "Best BSc (Hons) Graduate" and "Best Project BSc (Hons) Computer Science" awards for the highest overall mark in the year group and highest marked dissertation, respectively.</p>
+    <h2 class="education__header-title">BSc (Hons) Computer Science</h2>
+    <h4 class="education__header-grade">First Class Honours</h4>
+    <h4 class="education__header-percentage"><strong>85%</strong></h4>
+    <p class="education__header-dates">2015 - 2019</p>
+    <p class="education__header-intro">Won both the "Best BSc (Hons) Graduate" and "Best Project BSc (Hons) Computer Science" awards for the highest overall mark in the year group and highest marked dissertation, respectively.</p>
   </div>
 </template>
 

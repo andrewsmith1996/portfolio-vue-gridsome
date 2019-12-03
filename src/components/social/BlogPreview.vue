@@ -1,14 +1,18 @@
 
 <template>
-  <div class="blog-content" v-if="blogLoaded">
-    <h2>Latest from my blog</h2>
-    <a href="https://thisdeveloperslife.wordpress.com/" target="_blank" class="blog-link">thisdeveloperslife.wordpress.com</a>
-    <article id="blog-wrapper">
-      <h4><strong><a :href=url>{{ title }}</a></strong></h4>
-      <span>Posted on {{ postDate }}</span>
-      <p>{{ intro }}</p>
-      <a :href="url" target="_blank">read more</a>
-    </article>
+  <div class="contact__blog">
+    <h2 class="contact__blog-preview__top-title">Latest from my blog</h2>
+    <a href="https://thisdeveloperslife.wordpress.com/" target="_blank" class="contact__blog-preview__url">thisdeveloperslife.wordpress.com</a>
+    <carousel v-if="blogPosts">
+      <slide v-for="(post, index) in blogPosts" :key="index" class="contact__blog-preview">
+        <article>
+          <h4 class="contact__blog-preview__title"><strong><a :href=post.url>{{ post.title }}</a></strong></h4>
+          <span>Posted on {{ post.postDate }}</span>
+          <p class="contact__blog-preview__content">{{ post.intro }}</p>
+          <a :href="post.url" target="_blank">read more</a>
+        </article>
+      </slide>
+    </carousel>
   </div>
 </template>
 
@@ -16,27 +20,27 @@
 import { Component, Vue, Prop, Mixins } from "vue-property-decorator";
 import axios from 'axios';
 import * as moment from 'moment';
+const { Carousel, Slide }  = require('vue-carousel');
 
-@Component
+@Component({
+   components: {
+      Carousel,
+      Slide
+   }
+})
 export default class BlogPreview extends Vue {
-  url!: string;
-  title!: string;
-  intro!: string;
-  postDate!: string;
-  blogLoaded: boolean = false;
-
+  blogPosts: Array<any> = [];
   async mounted() {
      try {
         let response = await axios.get('https://public-api.wordpress.com/rest/v1.1/sites/117679029/posts/');
-
-        const data = response.data;
-        this.postDate = moment(data.posts[0].date).format('MMMM Do YYYY, h:mma');
-        
-        this.title = data.posts[0].title.replace(/<\/?[^>]+>/gi, '').replace(/&amp;/g, '&');
-        this.url = data.posts[0].URL;
-        this.intro = data.posts[0].excerpt.replace(/<\/?[^>]+>/gi, '').replace(/&amp;/g, '&').replace('[&hellip;]', '...');
-        this.blogLoaded = true;
-
+        this.blogPosts = response.data.posts.map((post: any) => {
+          return {
+            title: post.title.replace(/<\/?[^>]+>/gi, '').replace(/&amp;/g, '&'),
+            url: post.URL,
+            intro: post.excerpt.replace(/<\/?[^>]+>/gi, '').replace(/&amp;/g, '&').replace('[&hellip;]', '...'),
+            postDate: moment(post.date).format('MMMM Do YYYY, h:mma')
+          }
+        });
      } catch (e) {
        console.log(e);
      }
