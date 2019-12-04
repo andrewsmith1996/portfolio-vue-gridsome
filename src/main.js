@@ -64,7 +64,7 @@ export default function (Vue, { router, head, isClient, appOptions } ) {
 
   head.link.push({
     rel: 'icon',
-    href: '~/assets/images/favicons/favicon-32x32.png'
+    href: 'favicon.png'
   })
 
   head.link.push({
