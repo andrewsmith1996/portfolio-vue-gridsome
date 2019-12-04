@@ -13,12 +13,23 @@ $grey-light:darken($white, 13%);
 @mixin inner-container {
 	width:75%;
 	margin:0 auto;
+	@media only screen and (max-width: 1080px) {
+		width:85%;
+	}
 }
 
 @mixin section-spacing($size: 40px) {
 	padding: $size 0;
+	@media only screen and (max-width: 768px) {
+		padding:15px 0;
+	}
 }
 
+@mixin remove-mobile-hover() {
+	@media only screen and (max-width: 768px) {
+		transform: scale(1);
+	}
+}
 
 @mixin transition($speed: 0.3s){
 	-webkit-transition: all $speed ease;
@@ -113,6 +124,9 @@ p, li {
 		align-items:center;
 		justify-content: center;
 		z-index:2;
+		@media only screen and (max-width: 960px) {
+			flex-direction: column;
+		}
 	}
 
 	&__content {
@@ -124,10 +138,29 @@ p, li {
 		display: flex;
 		justify-content: center;
 		flex-basis: 100%;
-		flex: 1;
+		flex: 1;		
 
-		@include on-circle($item-count: 6, $circle-size: 16em, $item-size: 4.5em); 
-		
+		@media only screen and (min-width: 520px) {
+			height:40px;
+			width:40px;
+			flex-wrap: wrap;
+		}
+
+		@media only screen and (min-width: 675px) {
+			height:50px;
+			width:50px;
+		}
+
+		@media only screen and (min-width: 800px) {
+			height:60px;
+			width:60px;
+		}
+
+		@media only screen and (min-width: 960px) {
+			@include on-circle($item-count: 6, $circle-size: 13.5em, $item-size: 3.75em); 
+			flex-direction: row;
+		}
+
 		img { 
 			display: block; 
 			max-width: 100%; 
@@ -136,6 +169,9 @@ p, li {
 			border: solid 5px $white;
 			transition: .15s;
 			padding:10px;
+			@media only screen and (max-width: 960px) {
+				margin: 0 8px;
+			}
 		}
 	}
 
@@ -175,6 +211,9 @@ p, li {
 	&__inner-container {
 		display:flex;
 		@include inner-container();
+		@media only screen and (max-width: 768px) {
+			flex-direction: column;
+		}
 	}
 	
 	&__block {
@@ -187,6 +226,10 @@ p, li {
 		align-items: center;
 		text-align:center;
 		margin:0 10px;
+
+		@media only screen and (max-width: 768px) {
+			margin: 20px 10px;
+		}
 	}
 
 	&__block-title {
@@ -222,13 +265,18 @@ p, li {
 	justify-content: center;
 
 	@include transition();
+	@media only screen and (max-width: 768px) {
+		margin: 15px 0;
+	}
 	
 	&:hover,&:focus{
 		transform:scale(1.2);
+		@include remove-mobile-hover();
 
 		.project-screen__title,
 		.project-screen__caption{
 			transform: scale(0);
+			@include remove-mobile-hover();
 			z-index:-1;
 		}
 	}
@@ -258,7 +306,10 @@ p, li {
 .project {
 	&__simple {
 		display:flex;
-		@include section-spacing();
+		@include section-spacing(40px);
+		@media only screen and (max-width: 768px) {
+			flex-direction: column;
+		}
 
 		&-content {
 			display:flex;
@@ -272,12 +323,22 @@ p, li {
 			justify-content: center;
 			flex-basis:100%;
 			flex-grow:1;
+			@media only screen and (max-width: 768px) {
+				flex-direction: column;
+				justify-content: center;
+				align-items:center;
+			}
+			
 			&--row {
 				display: flex;
 				justify-content: space-evenly;
 				align-items: center;
 				flex-basis:100%;
 				flex-grow:1;
+				margin-bottom:40px;
+				@media only screen and (max-width: 768px) {
+					flex-direction: column;
+				}
 			}
 		}
 
@@ -287,6 +348,7 @@ p, li {
 			@include transition();
 			&:hover, &:active {
 				transform:scale(1.1);
+				@include remove-mobile-hover();
 			}
 		}
 	}
@@ -318,6 +380,9 @@ p, li {
 	display:flex;
 	justify-content: center;
 	align-items: center;
+	@media only screen and (max-width: 768px) {
+		flex-direction: column;
+	}
 }
 
 .education {
@@ -337,6 +402,10 @@ p, li {
 		width:60%;
 		margin: 0 auto;
 		margin-bottom: 35px;
+
+		@media only screen and (max-width: 768px) {
+			width:100%;
+		}
 	}
 
 	&__header-title {
@@ -401,6 +470,9 @@ p, li {
 		display:flex;
 		color:#fff;
 		margin-bottom:25px;
+		@media only screen and (max-width: 768px) {
+			flex-direction: column;
+		}
 	}
 
 	&__column {
@@ -422,6 +494,9 @@ p, li {
 	&__cards {
 		display:flex;
 		flex-wrap: wrap;
+		@media only screen and (max-width: 768px) {
+			flex-direction: column;
+		}
 	}
 
 	&__card {
@@ -467,6 +542,7 @@ p, li {
 		&:hover,&:focus{
 			box-shadow: 0 18px 34px rgba(0,0,0,.09), 0 8px 14px rgba(0,0,0,.09);
 			transform:scale(1.04);
+			@include remove-mobile-hover();
 		}
 	}
 
@@ -505,12 +581,16 @@ p, li {
 		display:flex;
 		flex-direction: column;
 		@include section-spacing(20px);
+		
 	}
 
 	&__content-container {
 		display: flex;
 		flex-direction: row;
 		margin-bottom:25px;
+		@media only screen and (max-width: 768px) {
+			flex-direction: column;
+		}
 	}
 
 	&__skills-content {
@@ -545,6 +625,10 @@ p, li {
 	&__row {
 		display: flex;
 		flex-direction: row;
+
+		@media only screen and (max-width: 768px) {
+			flex-direction: column;
+		}
 	}
 }
 
@@ -573,6 +657,7 @@ p, li {
 	}
 
 	&__blog {
+
 		&-preview {
 			background-color:$the-andrew-blue;
 			background: url('../assets/images/backgrounds/bg.png') no-repeat center center;
@@ -582,14 +667,11 @@ p, li {
 			border-radius:18px;
 			box-shadow: 0 8px 14px rgba(0,0,0,.09), 0 4px 6px rgba(0,0,0,.09);
 			position: relative;
-			flex:1;
-			flex-basis:100%; 
 
 			article {
 				padding:18px;
 			}
-			margin-right:10px;
-			
+
 			&:after {
 				content: '';
 				width: 100%;
@@ -636,12 +718,18 @@ p, li {
 
 .social__links {
 	display:flex;
+	@media only screen and (max-width: 768px) {
+		justify-content: center;
+	}
 
 	&-link {	
 		margin-right:15px;
 		@include transition;	
 		&:hover,&:focus{
 			transform:scale(1.10);
+			@media only screen and (max-width: 768px) {
+				@include remove-mobile-hover();
+			}
 		}
 	}
 }
