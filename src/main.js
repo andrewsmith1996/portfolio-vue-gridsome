@@ -27,6 +27,7 @@ export default function (Vue, { router, head, isClient, appOptions } ) {
     name: 'theme-color',
     content: '#ffffff'
   })
+  
 
   head.meta.push({
     name: 'msapplication-TileColor',
