@@ -7,11 +7,6 @@
 module.exports = {
   siteName: 'Gridsome',
   plugins: [{
-    use: 'gridsome-plugin-typescript',
-    use: '@gridsome/source-filesystem',
-      options: {
-        path: 'content/**/*.md',
-        typeName: 'Post'
-      }
+    use: 'gridsome-plugin-typescript'
   }]
 }
