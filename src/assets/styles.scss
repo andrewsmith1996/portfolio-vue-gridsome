@@ -132,6 +132,10 @@ p, li {
 	&__content {
 		flex-basis: 100%;
 		flex: 1;
+
+		@media only screen and (max-width: 960px) {
+			margin-bottom:25px;
+		}
 	}
 
 	&__technologies {
@@ -139,25 +143,10 @@ p, li {
 		justify-content: center;
 		flex-basis: 100%;
 		flex: 1;		
-
-		@media only screen and (min-width: 520px) {
-			height:40px;
-			width:40px;
-			flex-wrap: wrap;
-		}
-
-		@media only screen and (min-width: 675px) {
-			height:50px;
-			width:50px;
-		}
-
-		@media only screen and (min-width: 800px) {
-			height:60px;
-			width:60px;
-		}
+		flex-wrap: wrap;
 
 		@media only screen and (min-width: 960px) {
-			@include on-circle($item-count: 6, $circle-size: 13.5em, $item-size: 3.75em); 
+			@include on-circle($item-count: 6, $circle-size: 15.5em, $item-size: 4em); 
 			flex-direction: row;
 		}
 
@@ -169,15 +158,12 @@ p, li {
 			border: solid 5px $white;
 			transition: .15s;
 			padding:10px;
-			@media only screen and (max-width: 960px) {
-				margin: 0 8px;
-			}
+			height:70px;
+			width:70px;
+			margin: 8px;
 
-			@include transition();
-			&.active {
-				-webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
-				filter: grayscale(100%);
-				border: solid 5px $grey-light;
+			@media only screen and (min-width: 960px) {
+				margin: 0 8px;
 			}
 		}
 	}
@@ -228,7 +214,6 @@ p, li {
 		display: flex;
 		flex:1;
 		flex-basis:100%;
-		justify-content: center;
 		flex-direction: column;
 		align-items: center;
 		text-align:center;
@@ -328,6 +313,10 @@ p, li {
 			flex-direction: column;
 			flex-basis:100%;
 			flex-grow:1;
+
+			@media only screen and (max-width: 768px) {
+				margin-bottom:25px;
+			}
 		}	
 
 		&-screenshots {
@@ -359,6 +348,11 @@ p, li {
 		&-screenshot {
 			margin: 0 10px;
 
+			@media only screen and (max-width: 768px) {
+				margin-bottom:25px;
+				width:80%;
+			}
+
 			@include transition();
 			&:hover, &:active {
 				transform:scale(1.1);
@@ -383,6 +377,8 @@ p, li {
 		margin-bottom:20px;
 		font-size:14px;
 		font-weight: 500;
+
+		
 	}
 
 	&__description {
@@ -671,32 +667,28 @@ p, li {
 	}
 
 	&__blog {
-
 		&-preview {
 			background-color:$the-andrew-blue;
 			background: url('../assets/images/backgrounds/bg.png') no-repeat center center;
-			transform: translateZ(0);-webkit-transform: translateZ(0);
-			background-attachment: fixed;
-			background-size:250%;
-			border-radius:18px;
+			border-radius: 18px;
 			box-shadow: 0 8px 14px rgba(0,0,0,.09), 0 4px 6px rgba(0,0,0,.09);
 			position: relative;
 
 			article {
 				padding:18px;
+				&:after {
+					content: '';
+					width: 100%;
+					height: 100%;
+					background: linear-gradient(to bottom, rgba(0, 0, 0, 0) -100%, #1A2980 50%);
+					position: absolute;
+					bottom: 0;
+					left: 0;
+					border-radius:18px;
+					z-index: 1;
+				}
 			}
 
-			&:after {
-				content: '';
-				width: 100%;
-				height: 100%;
-				background: linear-gradient(to bottom, rgba(0, 0, 0, 0) -100%, #1A2980 100%);
-				position: absolute;
-				bottom: 0;
-				left: 0;
-				border-radius:18px;
-				z-index: 1;
-			}
 
 			h2, h4, span, p, a {
 				z-index:3;
@@ -762,5 +754,11 @@ p, li {
 			color: $white;
 			text-decoration: none;
 		}
+	}
+}
+
+.vueperslides__parallax-wrapper {
+	&::after, &::before{
+		box-shadow: none !important;
 	}
 }

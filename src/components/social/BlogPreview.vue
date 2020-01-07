@@ -3,16 +3,18 @@
   <div class="contact__blog">
     <h2 class="contact__blog-preview__top-title">Latest from my blog</h2>
     <a href="https://thisdeveloperslife.wordpress.com/" target="_blank" class="contact__blog-preview__url">thisdeveloperslife.wordpress.com</a>
-    <carousel v-if="blogPosts">
-      <slide v-for="(post, index) in blogPosts" :key="index" class="contact__blog-preview">
-        <article>
-          <h4 class="contact__blog-preview__title"><strong><a :href=post.url>{{ post.title }}</a></strong></h4>
-          <span>Posted on {{ post.postDate }}</span>
-          <p class="contact__blog-preview__content">{{ post.intro }}</p>
-          <a :href="post.url" target="_blank">read more</a>
-        </article>
-      </slide>
-    </carousel>
+    <vueper-slides v-if="blogPosts" :bullets="false" :visible-slides="2" slide-multiple :gap="3" :dragging-distance="200">
+      <vueper-slide v-for="(post, index) in blogPosts" :key="index" class="contact__blog-preview">
+         <template v-slot:content>
+          <article>
+            <h4 class="contact__blog-preview__title"><strong><a :href=post.url>{{ post.title }}</a></strong></h4>
+            <span>Posted on {{ post.postDate }}</span>
+            <p class="contact__blog-preview__content">{{ post.intro }}</p>
+            <a :href="post.url" target="_blank">read more</a>
+          </article>
+         </template>
+      </vueper-slide>
+     </vueper-slides>
   </div>
 </template>
 
@@ -20,12 +22,13 @@
 import { Component, Vue, Prop, Mixins } from "vue-property-decorator";
 import axios from 'axios';
 import * as moment from 'moment';
-const { Carousel, Slide } = require('vue-carousel');
-  
+const { VueperSlides, VueperSlide } = require('vueperslides');
+import 'vueperslides/dist/vueperslides.css'
+
 @Component({
    components: {
-      Carousel,
-      Slide
+      VueperSlides,
+      VueperSlide
    }
 })
 export default class BlogPreview extends Vue {
