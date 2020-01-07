@@ -7,9 +7,9 @@
       <vueper-slide v-for="(post, index) in blogPosts" :key="index" class="contact__blog-preview">
          <template v-slot:content>
           <article>
-            <h4 class="contact__blog-preview__title"><strong><a :href=post.url>{{ post.title }}</a></strong></h4>
+            <h4 class="contact__blog-preview__title"><strong><a :href=post.url v-html="post.title"></a></strong></h4>
             <span>Posted on {{ post.postDate }}</span>
-            <p class="contact__blog-preview__content">{{ post.intro }}</p>
+            <p class="contact__blog-preview__content" v-html="post.intro"></p>
             <a :href="post.url" target="_blank">read more</a>
           </article>
          </template>
@@ -38,9 +38,9 @@ export default class BlogPreview extends Vue {
         let response = await axios.get('https://public-api.wordpress.com/rest/v1.1/sites/117679029/posts/');
         this.blogPosts = response.data.posts.map((post: any): BlogPost => {
           return {
-            title: post.title.replace(/<\/?[^>]+>/gi, '').replace(/&amp;/g, '&'),
+            title: post.title,
             url: post.URL,
-            intro: post.excerpt.replace(/<\/?[^>]+>/gi, '').replace(/&amp;/g, '&').replace('[&hellip;]', '...'),
+            intro: post.excerpt,
             postDate: moment(post.date).format('MMMM Do YYYY, h:mma')
           } as BlogPost;
         });
